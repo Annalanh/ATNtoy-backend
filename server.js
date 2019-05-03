@@ -28,7 +28,7 @@ app.use(bodyParser.json({ extended: false }));
 
 app.use("/api", apiRouter);
 
-app.listen(6969, (err) => {
+app.listen(process.env.PORT || 6969, (err) => {
     if(err) console.log(err);
     else console.log("Server start success");
 });
