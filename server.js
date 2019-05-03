@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require('cors')
 app.use(cors({
-  origin: ["http://localhost:3000", "https://atntoys41099.herokuapp.com/"],
+  origin: ["http://localhost:3000", "https://atntoys41099.herokuapp.com"],
   credentials: true
 }));
 // app.use((req, res, next) => {
