@@ -16,7 +16,7 @@ app.use((req, res, next) => {
     );
     next();
   });
-mongoose.connect("mongodb://localhost/ATN_stock_data", {useNewUrlParser: true}, (err) => {
+mongoose.connect("mongodb+srv://Annalanh:Annalanh99@@cluster0-ebnpt.mongodb.net/test?retryWrites=true", {useNewUrlParser: true}, (err) => {
     if(err) console.log(err);
     else console.log("Connected to DB")
 })
